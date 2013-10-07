@@ -1,0 +1,88 @@
+body {
+	margin: 0;
+	font-family: Verdana;
+}
+#sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 199px;
+	height: 100%;
+	background-color: #d6d6d6;
+	overflow-y: auto;
+	border-right: 1px solid black;
+	z-index: 100;
+}
+
+.group {
+	clear: both;
+}
+.group h3 {
+	font-size: 12px;
+	margin: 0;
+	padding: 3px;
+	background-color: #db4142;
+}
+.tile {
+	width: 36px;
+	height: 36px;
+	float:left;
+	margin: 4px;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.tile.selected {
+	padding: 1px;
+	margin: 2px;
+	border: 2px dashed black;
+}
+
+#maineditor {
+	margin-left: 200px;
+}
+
+#maparea {
+	float:left;
+}
+
+.map {
+	border-top: 1px solid black;
+	border-left: 1px solid black;		
+}
+.row {
+	height: 37px;
+	clear: left;
+}
+.cell {
+	position: relative;
+	width: 36px;
+	height: 36px;
+	float:left;
+
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.unit {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 36px;
+	height: 36px;
+}
+
+.addaxis {
+	background-color: grey;
+}
+.addrow {
+	width: 100%;
+	height: 18px;
+	clear:both;
+	cursor: n-resize;
+}
+.addcol {
+	width: 18px;
+	height: 100%;
+	float:left;
+	cursor: e-resize;
+}
