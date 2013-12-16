@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Chomps Challenge Map Editor</title>
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="js/tile-mapping.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+
+	<body>
+		<div id="sidebar">
+			<div id="options">
+				<ul>
+					<li><a href="#">New map</a></li>
+					<li><a href="#">Import map</a></li>
+					<li><a href="#">Export map</a></li>
+				</ul>
+			</div>
+
+			<!--
+				Needed:
+				- Paint terrain
+				- Add item/unit to tile
+				- Delete item/unit
+				- 
+			-->
+
+			<div id="brushes">
+				<div>Select</div>
+				<div>Clear</div>
+				<div>Inspect</div>
+			</div>
+
+			<div id="tilelist"></div>
+
+			<div id="active-control"></div>
+
+		</div>
+
+		<div id="maineditor">
+			<div id="add_row_top" class="addaxis addrow"></div>
+			<div id="add_column_left" class="addaxis addcol"></div>
+			<div id="maparea"></div> 
+			<div id="add_column_right" class="addaxis addcol"></div>
+			<div id="add_row_bottom" class="addaxis addrow"></div>
+		</div>
+	</body>
+</html>
